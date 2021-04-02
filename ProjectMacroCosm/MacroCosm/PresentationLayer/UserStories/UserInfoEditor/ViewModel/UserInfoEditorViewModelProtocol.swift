@@ -7,4 +7,5 @@
 
 protocol UserInfoEditorViewModelProtocol: class {
     
+    var userInfo: UserInfo { get set }
 }

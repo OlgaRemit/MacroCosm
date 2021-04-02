@@ -7,4 +7,8 @@
 
 protocol GeneralViewModelProtocol: class {
     
+    var zodiacPredictionWillChange: (() -> Void)? { get set }
+    var zodiacPredictionDidChanged: ((ZodiacPrediction) -> Void)? { get set }
+
+    func loadData()
 }

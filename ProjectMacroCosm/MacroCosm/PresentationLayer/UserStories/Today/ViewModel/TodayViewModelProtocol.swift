@@ -7,5 +7,8 @@
 
 protocol TodayViewModelProtocol: class {
     
-    func getDaylyPrediction(completion: @escaping GetSettingsCompletion)
+    var zodiacPredictionWillChange: (() -> Void)? { get set }
+    var zodiacPredictionDidChanged: ((ZodiacPrediction) -> Void)? { get set }
+
+    func loadData()
 }

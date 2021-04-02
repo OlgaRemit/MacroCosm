@@ -20,6 +20,7 @@ final class TodayCoordinator: DefaultCoordinator {
         coordinator.transition = view
         
         viewModel.horoscopeService = HoroscopeNetworkService.shared
+        viewModel.userInfoStorage = UserInfoStorageService.shared
 
         if let configuration = configuration {
             configuration(viewModel)

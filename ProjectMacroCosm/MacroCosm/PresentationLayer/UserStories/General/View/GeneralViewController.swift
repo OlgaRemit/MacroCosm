@@ -28,5 +28,25 @@ final class GeneralViewController: UIViewController {
 
     private func configureSelf() {
         
+        viewModel.zodiacPredictionWillChange = { [ weak self ] in
+            self?._view.setLoadingState(isActive: true, animated: false)
+        }
+        
+        viewModel.zodiacPredictionDidChanged = { [ weak self ] prediction in
+            DispatchQueue.main.async {
+                self?.setPrediction(prediction)
+            }
+        }
+        viewModel.loadData()
+    }
+    
+    private func setPrediction(_ prediction: ZodiacPrediction) {
+        _view.setLoadingState(isActive: false)
+        
+        _view.imageView.setDefaultLoadingInicator()
+        _view.imageView.sd_setImage(with: prediction.zodiacImageUrl, completed: nil)
+        _view.zodiacNameLabel.text = prediction.zodiacName
+        _view.zodiacInfoTextLabel.text = prediction.zodiacDescription
+        _view.predictionLabel.text = prediction.zodiacInfoText
     }
 }

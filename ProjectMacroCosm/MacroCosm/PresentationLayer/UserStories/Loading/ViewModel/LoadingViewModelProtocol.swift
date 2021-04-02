@@ -7,5 +7,7 @@
 
 protocol LoadingViewModelProtocol: class {
     
+    var userInfo: UserInfo { get }
+    
     func startConfiguration()
 }

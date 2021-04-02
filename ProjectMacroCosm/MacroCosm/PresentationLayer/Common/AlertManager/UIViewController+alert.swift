@@ -101,6 +101,35 @@ extension UIViewController {
                                       style: UIAlertAction.Style.default,
                                       handler: { (_) in stringReturnHandler(pickerManager.selectedValue) }))
         present(alert, animated: true, completion: nil)
+        
+    }
+    
+    func showAlertWithDatePicker(title: String, startDate: Date? = nil, datePickerMode: UIDatePicker.Mode = .date, returnHandler: @escaping (_ date: Date) -> Void) {
+        
+        let myDatePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: 250, height: 150))
+        myDatePicker.datePickerMode = datePickerMode
+        myDatePicker.timeZone = .current
+        myDatePicker.transform = .init(scaleX: 0.8, y: 0.8)
+        if let startDate = startDate {
+            myDatePicker.date = startDate
+        }
+        if #available(iOS 13.4, *) {
+            myDatePicker.preferredDatePickerStyle = .wheels
+        }
+        
+        let vc = UIViewController()
+        vc.preferredContentSize = CGSize(width: 250, height: 170)
+        vc.view.addSubview(myDatePicker)
+        
+        let alertController = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        alertController.setValue(vc, forKey: "contentViewController")
+        let selectAction = UIAlertAction(title: R.string.localizable.ok(), style: .default) { _ in
+            returnHandler(myDatePicker.date)
+        }
+        let cancelAction = UIAlertAction(title: R.string.localizable.cancel(), style: .cancel, handler: nil)
+        alertController.addAction(selectAction)
+        alertController.addAction(cancelAction)
+        present(alertController, animated: true)
     }
     
     func showAlertWithColorPicker(startColor: UIColor?, colorReturnHandler: @escaping (_ color: UIColor) -> Void) {

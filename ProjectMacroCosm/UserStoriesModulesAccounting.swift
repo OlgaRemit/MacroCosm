@@ -15,6 +15,7 @@ enum UserStoriesModulesDefault: ModuleGenerator {
     case loading
     case today
     case general
+    case locationPickerContainer
     case userInfoEditor
     case main
 
@@ -30,6 +31,8 @@ enum UserStoriesModulesDefault: ModuleGenerator {
             return TodayCoordinator.createModule()
         case .general: 
             return GeneralCoordinator.createModule()
+        case .locationPickerContainer: 
+            return LocationPickerContainerCoordinator.createModule()
         case .userInfoEditor: 
             return UserInfoEditorCoordinator.createModule()
         case .main: 
@@ -45,6 +48,7 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
     case loading(output: LoadingOutput)
     case today(output: TodayOutput)
     case general(output: GeneralOutput)
+    case locationPickerContainer(output: LocationPickerContainerOutput)
     case userInfoEditor(output: UserInfoEditorOutput)
     case main(output: MainOutput)
 
@@ -72,6 +76,11 @@ enum UserStoriesModulesWithOutput: ModuleGenerator {
             
         case .general(let output): 
             return GeneralCoordinator.createModule { viewModel in 
+                viewModel.output = output
+            }
+            
+        case .locationPickerContainer(let output): 
+            return LocationPickerContainerCoordinator.createModule { viewModel in 
                 viewModel.output = output
             }
             

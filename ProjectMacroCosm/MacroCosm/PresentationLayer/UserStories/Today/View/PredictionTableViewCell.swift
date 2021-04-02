@@ -47,7 +47,7 @@ class PredictionTableViewCell: UITableViewCell {
         
         addSubview(paragraphLabel)
         paragraphLabel.translatesAutoresizingMaskIntoConstraints = false
-        paragraphLabel.font = R.font.gilroyLight(size: 14)
+        paragraphLabel.font = R.font.gilroyLight(size: 12)
         paragraphLabel.textColor = R.color.tintColorDark()
         paragraphLabel.textAlignment = .center
         paragraphLabel.numberOfLines = 0

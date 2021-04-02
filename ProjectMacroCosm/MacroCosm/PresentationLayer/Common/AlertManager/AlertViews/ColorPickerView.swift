@@ -195,7 +195,6 @@ class ColorPickerView: UIView {
         addSubview(colorsImage)
         colorsImage.translatesAutoresizingMaskIntoConstraints = false
         colorsImage.layer.cornerRadius = demoViewSide / 2
-        colorsImage.image = R.image.colorPicker()
         UIStyleManager.shadow(colorsImage)
         let panRecognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan(recognizer:)))
         colorsImage.isUserInteractionEnabled = true

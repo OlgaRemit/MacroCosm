@@ -7,6 +7,13 @@
 
 final class UserInfoEditorViewModel {
 	var output: UserInfoEditorOutput?
+    
+    var userInfoStorage: UserInfoStorageServiceProtocol!
+    
+    var userInfo: UserInfo {
+        get { userInfoStorage.userInfo }
+        set { userInfoStorage.userInfo = newValue }
+    }
 }
 
 // MARK: - Configuration

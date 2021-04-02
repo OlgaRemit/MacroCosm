@@ -11,6 +11,8 @@ struct ZodiacPrediction: Codable {
     
     let zodiacName: String
     let zodiacImageUrlString: String
+    let zodiacDescription: String
+    let zodiacInfoText: String
     let prediction: PredictionDaily
     
     var zodiacImageUrl: URL? {
@@ -18,16 +20,18 @@ struct ZodiacPrediction: Codable {
     }
     
     enum CodingKeys: String, CodingKey {
+        case prediction = "predict"
         case zodiacName = "name"
         case zodiacImageUrlString = "image"
-        case prediction = "predict"
+        case zodiacDescription = "short_description"
+        case zodiacInfoText = "description"
     }
 }
 
 struct PredictionDaily: Codable {
     
-    let info: String
-    let dateString: String
+    let info: String?
+    let dateString: String?
     let predictionBlocks: [PredictionBlock]
     
     enum CodingKeys: String, CodingKey {
@@ -39,6 +43,6 @@ struct PredictionDaily: Codable {
 
 struct PredictionBlock: Codable {
     
-    let header: String
-    let text: String
+    let header: String?
+    let text: String?
 }

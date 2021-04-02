@@ -33,19 +33,16 @@ final class TodayViewController: UIViewController {
         _view.predictionsTableView.dataSource = self
         _view.predictionsTableView.delegate = self
 
-        _view.setLoadingState(isActive: true, animated: false)
-        
-        viewModel.getDaylyPrediction { [ weak self ] result in
-            switch result {
-            case .success(let data):
-                DispatchQueue.main.async {
-                    self?.setPrediction(data)
-                }
-            case .failure(let error):
-                print(error)
-            }
-            
+        viewModel.zodiacPredictionWillChange = { [ weak self ] in
+            self?._view.setLoadingState(isActive: true, animated: false)
         }
+        
+        viewModel.zodiacPredictionDidChanged = { [ weak self ] prediction in
+            DispatchQueue.main.async {
+                self?.setPrediction(prediction)
+            }
+        }
+        viewModel.loadData()
     }
     
     private func setPrediction(_ prediction: ZodiacPrediction) {

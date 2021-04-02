@@ -11,6 +11,7 @@ target 'MacroCosm' do
   pod 'SDWebImage'
   pod 'Alamofire'
   pod 'SwipeableTabBarController', '~> 3.2.1'
+  pod 'LocationPicker'
 
 #  Exclude DEPLOYMENT_TARGET warnings
   post_install do |installer|

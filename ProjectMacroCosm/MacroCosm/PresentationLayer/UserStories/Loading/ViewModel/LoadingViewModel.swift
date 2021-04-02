@@ -6,7 +6,14 @@
 //
 
 final class LoadingViewModel {
+    
 	var output: LoadingOutput?
+    
+    var userInfoStorage: UserInfoStorageServiceProtocol!
+    
+    var userInfo: UserInfo {
+        return userInfoStorage.userInfo
+    }
 }
 
 // MARK: - Configuration

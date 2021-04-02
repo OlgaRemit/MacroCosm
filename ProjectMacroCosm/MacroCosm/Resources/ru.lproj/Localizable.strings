@@ -40,12 +40,23 @@
 
 // TODO: add russian translation
 // Mark: Settings
-"changeBirthInformation" = "Change Birth Information";
-"support" = "Support";
-"rate App" = "Rate app";
-"informationAboutUs" = "Information about us";
-"aboutUs " = "About us";
-"legalInformation" = "Legal information";
-"termsOfUse" = "Terms of use";
-"privacyPolicy" = "Privacy policy";
-"version" = "Version";
+"changeBirthInformation" = "Изменить дату рождения";
+"support" = "Поддержка";
+"rate App" = "Оценить приложение";
+"informationAboutUs" = "Информация о нас";
+"aboutUs " = "О нас";
+"legalInformation" = "Правовая информация";
+"termsOfUse" = "Пользовательское соглашение";
+"privacyPolicy" = "Политика приватности";
+"version" = "Версия";
+
+// Mark: UserInfoEditor
+"saveButton" = "Сохранить";
+"birthDayQuestion" = "Укажи дату рождения";
+"birthTimeQuestion" = "Укажи время рождения";
+"birthPlaceQuestion" = "Укажи место рождения";
+"date" = "Дата";
+"time" = "Время";
+"city" = "Место";
+"datePickerTitleDate" = "Выбери день твоего рождения";
+"datePickerTitleTime" = "Выбери время твоего рождения";

@@ -7,4 +7,5 @@
 
 protocol UserInfoEditorCoordinatorProtocol: DefaultCoordinatorProtocol {
     
+    func showMainScreen()
 }

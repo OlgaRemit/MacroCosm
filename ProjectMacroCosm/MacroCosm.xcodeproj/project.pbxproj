@@ -52,7 +52,6 @@
 		894064DE2612308800DC682F /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064BB2612308800DC682F /* UIViewController+Keyboard.swift */; };
 		894064DF2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064BC2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift */; };
 		894064E02612308800DC682F /* UIViewController+addChildViewControllerToView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064BD2612308800DC682F /* UIViewController+addChildViewControllerToView.swift */; };
-		894064E12612308800DC682F /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064BE2612308800DC682F /* UIViewController+alert.swift */; };
 		894064E22612308800DC682F /* String+SizeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064BF2612308800DC682F /* String+SizeCalculator.swift */; };
 		894064E32612308800DC682F /* UIImage+overlayedColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064C02612308800DC682F /* UIImage+overlayedColor.swift */; };
 		894064E42612308800DC682F /* UIImage+merge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894064C12612308800DC682F /* UIImage+merge.swift */; };
@@ -132,6 +131,19 @@
 		89DD264B25DC9F0000AD2868 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DD264A25DC9F0000AD2868 /* R.generated.swift */; };
 		89DD277225DCFB2C00AD2868 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277025DCFB2C00AD2868 /* Images.xcassets */; };
 		89DD277325DCFB2C00AD2868 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DD277125DCFB2C00AD2868 /* Colors.xcassets */; };
+		89EECBB8261519BB009242BF /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECBB7261519BB009242BF /* UserInfo.swift */; };
+		89EECBD72615529F009242BF /* UIViewController+alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECBD62615529E009242BF /* UIViewController+alert.swift */; };
+		89EECC4626155E2A009242BF /* LocationPickerContainerViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC3C26155E2A009242BF /* LocationPickerContainerViewModelProtocol.swift */; };
+		89EECC4726155E2A009242BF /* LocationPickerContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC3D26155E2A009242BF /* LocationPickerContainerViewModel.swift */; };
+		89EECC4826155E2A009242BF /* LocationPickerContainerOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC3E26155E2A009242BF /* LocationPickerContainerOutput.swift */; };
+		89EECC4926155E2A009242BF /* LocationPickerContainerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC4026155E2A009242BF /* LocationPickerContainerCoordinator.swift */; };
+		89EECC4A26155E2A009242BF /* LocationPickerContainerCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC4126155E2A009242BF /* LocationPickerContainerCoordinatorProtocol.swift */; };
+		89EECC4B26155E2A009242BF /* LocationPickerContainerInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC4226155E2A009242BF /* LocationPickerContainerInput.swift */; };
+		89EECC4C26155E2A009242BF /* LocationPickerContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC4426155E2A009242BF /* LocationPickerContainerViewController.swift */; };
+		89EECC4D26155E2A009242BF /* LocationPickerContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC4526155E2A009242BF /* LocationPickerContainerView.swift */; };
+		89EECC672615778F009242BF /* UserInfoStorageServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC652615778F009242BF /* UserInfoStorageServiceProtocol.swift */; };
+		89EECC682615778F009242BF /* UserInfoStorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC662615778F009242BF /* UserInfoStorageService.swift */; };
+		89EECC6C26158561009242BF /* Date+zodiac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EECC6B26158561009242BF /* Date+zodiac.swift */; };
 		89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A312542E16200D482F6 /* UIConstants.swift */; };
 		89F00AB02542E16200D482F6 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A4D2542E16200D482F6 /* AppRouter.swift */; };
 		89F00AB12542E16200D482F6 /* MainAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F00A4E2542E16200D482F6 /* MainAppRouter.swift */; };
@@ -207,7 +219,6 @@
 		894064BB2612308800DC682F /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
 		894064BC2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+setDefaultLoadingInicator.swift"; sourceTree = "<group>"; };
 		894064BD2612308800DC682F /* UIViewController+addChildViewControllerToView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+addChildViewControllerToView.swift"; sourceTree = "<group>"; };
-		894064BE2612308800DC682F /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
 		894064BF2612308800DC682F /* String+SizeCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+SizeCalculator.swift"; sourceTree = "<group>"; };
 		894064C02612308800DC682F /* UIImage+overlayedColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+overlayedColor.swift"; sourceTree = "<group>"; };
 		894064C12612308800DC682F /* UIImage+merge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+merge.swift"; sourceTree = "<group>"; };
@@ -288,6 +299,19 @@
 		89DD264A25DC9F0000AD2868 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		89DD277025DCFB2C00AD2868 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		89DD277125DCFB2C00AD2868 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		89EECBB7261519BB009242BF /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		89EECBD62615529E009242BF /* UIViewController+alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+alert.swift"; sourceTree = "<group>"; };
+		89EECC3C26155E2A009242BF /* LocationPickerContainerViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerContainerViewModelProtocol.swift; sourceTree = "<group>"; };
+		89EECC3D26155E2A009242BF /* LocationPickerContainerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerContainerViewModel.swift; sourceTree = "<group>"; };
+		89EECC3E26155E2A009242BF /* LocationPickerContainerOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerContainerOutput.swift; sourceTree = "<group>"; };
+		89EECC4026155E2A009242BF /* LocationPickerContainerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerContainerCoordinator.swift; sourceTree = "<group>"; };
+		89EECC4126155E2A009242BF /* LocationPickerContainerCoordinatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerContainerCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		89EECC4226155E2A009242BF /* LocationPickerContainerInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerContainerInput.swift; sourceTree = "<group>"; };
+		89EECC4426155E2A009242BF /* LocationPickerContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerContainerViewController.swift; sourceTree = "<group>"; };
+		89EECC4526155E2A009242BF /* LocationPickerContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerContainerView.swift; sourceTree = "<group>"; };
+		89EECC652615778F009242BF /* UserInfoStorageServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoStorageServiceProtocol.swift; sourceTree = "<group>"; };
+		89EECC662615778F009242BF /* UserInfoStorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoStorageService.swift; sourceTree = "<group>"; };
+		89EECC6B26158561009242BF /* Date+zodiac.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+zodiac.swift"; sourceTree = "<group>"; };
 		89F00A312542E16200D482F6 /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		89F00A4D2542E16200D482F6 /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		89F00A4E2542E16200D482F6 /* MainAppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppRouter.swift; sourceTree = "<group>"; };
@@ -556,6 +580,7 @@
 			isa = PBXGroup;
 			children = (
 				894064B32612308800DC682F /* AlertManager.swift */,
+				89EECBD62615529E009242BF /* UIViewController+alert.swift */,
 				894064B42612308800DC682F /* AlertViews */,
 			);
 			path = AlertManager;
@@ -579,7 +604,6 @@
 				894064BB2612308800DC682F /* UIViewController+Keyboard.swift */,
 				894064BC2612308800DC682F /* UIImageView+setDefaultLoadingInicator.swift */,
 				894064BD2612308800DC682F /* UIViewController+addChildViewControllerToView.swift */,
-				894064BE2612308800DC682F /* UIViewController+alert.swift */,
 				894064BF2612308800DC682F /* String+SizeCalculator.swift */,
 				894064C02612308800DC682F /* UIImage+overlayedColor.swift */,
 				894064C12612308800DC682F /* UIImage+merge.swift */,
@@ -832,6 +856,7 @@
 				8940669626134F9E00DC682F /* Array+safeIndex.swift */,
 				8940669726134F9E00DC682F /* String+capitalizingFirstLetter.swift */,
 				894066DD2613566800DC682F /* Array+isNotEmpty.swift */,
+				89EECC6B26158561009242BF /* Date+zodiac.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -875,6 +900,54 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		89EECC3A26155E2A009242BF /* LocationPickerContainer */ = {
+			isa = PBXGroup;
+			children = (
+				89EECC4226155E2A009242BF /* LocationPickerContainerInput.swift */,
+				89EECC3E26155E2A009242BF /* LocationPickerContainerOutput.swift */,
+				89EECC3B26155E2A009242BF /* ViewModel */,
+				89EECC3F26155E2A009242BF /* Coordinator */,
+				89EECC4326155E2A009242BF /* View */,
+			);
+			path = LocationPickerContainer;
+			sourceTree = "<group>";
+		};
+		89EECC3B26155E2A009242BF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				89EECC3C26155E2A009242BF /* LocationPickerContainerViewModelProtocol.swift */,
+				89EECC3D26155E2A009242BF /* LocationPickerContainerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		89EECC3F26155E2A009242BF /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				89EECC4026155E2A009242BF /* LocationPickerContainerCoordinator.swift */,
+				89EECC4126155E2A009242BF /* LocationPickerContainerCoordinatorProtocol.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		89EECC4326155E2A009242BF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89EECC4426155E2A009242BF /* LocationPickerContainerViewController.swift */,
+				89EECC4526155E2A009242BF /* LocationPickerContainerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89EECC642615778F009242BF /* UserInfoStorageService */ = {
+			isa = PBXGroup;
+			children = (
+				89EECC652615778F009242BF /* UserInfoStorageServiceProtocol.swift */,
+				89EECC662615778F009242BF /* UserInfoStorageService.swift */,
+			);
+			path = UserInfoStorageService;
+			sourceTree = "<group>";
+		};
 		89F00A302542E16200D482F6 /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -886,6 +959,7 @@
 		89F00A3A2542E16200D482F6 /* BusinessLogicLayer */ = {
 			isa = PBXGroup;
 			children = (
+				89EECC642615778F009242BF /* UserInfoStorageService */,
 				8934C5912613D8A300B19069 /* HoroscopeNetworkService */,
 			);
 			path = BusinessLogicLayer;
@@ -939,6 +1013,7 @@
 			isa = PBXGroup;
 			children = (
 				8934C5362613CAEB00B19069 /* PredictionModels.swift */,
+				89EECBB7261519BB009242BF /* UserInfo.swift */,
 			);
 			path = ModelsLayer;
 			sourceTree = "<group>";
@@ -958,11 +1033,12 @@
 				894064A126122D0100DC682F /* UserStoriesModulesAccounting.swift */,
 				8940651D2612327B00DC682F /* Loading */,
 				894065FF2613316A00DC682F /* Main */,
-				8940661B261334B000DC682F /* UserInfoEditor */,
-				8940663C261336A100DC682F /* Settings */,
-				894066C7261355BB00DC682F /* AboutUs */,
 				8934C5022613C37D00B19069 /* Today */,
 				8934C50E2613C37D00B19069 /* General */,
+				8940663C261336A100DC682F /* Settings */,
+				8940661B261334B000DC682F /* UserInfoEditor */,
+				894066C7261355BB00DC682F /* AboutUs */,
+				89EECC3A26155E2A009242BF /* LocationPickerContainer */,
 			);
 			path = UserStories;
 			sourceTree = "<group>";
@@ -1214,6 +1290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8934C5272613C37D00B19069 /* GeneralView.swift in Sources */,
+				89EECC672615778F009242BF /* UserInfoStorageServiceProtocol.swift in Sources */,
 				8940664A261336A100DC682F /* SettingsCoordinatorProtocol.swift in Sources */,
 				8940669826134F9E00DC682F /* SKProduct+localizedPrice.swift in Sources */,
 				894066D7261355BC00DC682F /* AboutUsOutput.swift in Sources */,
@@ -1229,7 +1306,9 @@
 				8940669D26134F9E00DC682F /* String+capitalizingFirstLetter.swift in Sources */,
 				894064E72612308800DC682F /* UIScrollView+ScrollToBottom.swift in Sources */,
 				8934C5242613C37D00B19069 /* GeneralCoordinator.swift in Sources */,
+				89EECC4D26155E2A009242BF /* LocationPickerContainerView.swift in Sources */,
 				894064A226122D0100DC682F /* UserStoriesModulesAccounting.swift in Sources */,
+				89EECC682615778F009242BF /* UserInfoStorageService.swift in Sources */,
 				8934C59C2613D8A300B19069 /* HoroscopeNetworkService.swift in Sources */,
 				8934C5292613C37D00B19069 /* GeneralOutput.swift in Sources */,
 				89F00AB32542E16200D482F6 /* AppDelegate.swift in Sources */,
@@ -1249,9 +1328,12 @@
 				894064DB2612308800DC682F /* UIView+TapAnimation.swift in Sources */,
 				89F00AB42542E16200D482F6 /* SceneDelegate.swift in Sources */,
 				8934C5372613CAEB00B19069 /* PredictionModels.swift in Sources */,
+				89EECC4826155E2A009242BF /* LocationPickerContainerOutput.swift in Sources */,
 				894066D3261355BC00DC682F /* AboutUsViewModelProtocol.swift in Sources */,
 				8940662E261334B000DC682F /* UserInfoEditorViewController.swift in Sources */,
+				89EECC4B26155E2A009242BF /* LocationPickerContainerInput.swift in Sources */,
 				894064F22612308800DC682F /* ScrollMovingUpManagerForUIControl.swift in Sources */,
+				89EECC4626155E2A009242BF /* LocationPickerContainerViewModelProtocol.swift in Sources */,
 				894066D5261355BC00DC682F /* AboutUsCoordinator.swift in Sources */,
 				8940664E261336A100DC682F /* SettingsOutput.swift in Sources */,
 				8940669A26134F9E00DC682F /* Array+weakObjects.swift in Sources */,
@@ -1271,9 +1353,10 @@
 				894064E82612308800DC682F /* UITextField+placeholderPadding.swift in Sources */,
 				8934C51D2613C37D00B19069 /* TodayCoordinator.swift in Sources */,
 				8940645526122B7600DC682F /* NetworkErrors.swift in Sources */,
+				89EECC4C26155E2A009242BF /* LocationPickerContainerViewController.swift in Sources */,
 				894064ED2612308800DC682F /* LimitatableTextView.swift in Sources */,
-				894064E12612308800DC682F /* UIViewController+alert.swift in Sources */,
 				894064D92612308800DC682F /* ColorPickerView.swift in Sources */,
+				89EECC4926155E2A009242BF /* LocationPickerContainerCoordinator.swift in Sources */,
 				8934C51A2613C37D00B19069 /* TodayViewModelProtocol.swift in Sources */,
 				8940645226122B7600DC682F /* CustomArrayEncoding.swift in Sources */,
 				8940660C2613316A00DC682F /* MainViewModelProtocol.swift in Sources */,
@@ -1289,6 +1372,7 @@
 				8934C5212613C37D00B19069 /* TodayOutput.swift in Sources */,
 				894064E52612308800DC682F /* UIView+shake.swift in Sources */,
 				8940668C261347AB00DC682F /* HorizontalLine.swift in Sources */,
+				89EECBB8261519BB009242BF /* UserInfo.swift in Sources */,
 				8940645426122B7600DC682F /* NetworkService.swift in Sources */,
 				8934C5222613C37D00B19069 /* GeneralViewModel.swift in Sources */,
 				8940669926134F9E00DC682F /* UserDefaults+color.swift in Sources */,
@@ -1305,6 +1389,8 @@
 				894066D6261355BC00DC682F /* AboutUsCoordinatorProtocol.swift in Sources */,
 				894066DE2613566800DC682F /* Array+isNotEmpty.swift in Sources */,
 				894064EB2612308800DC682F /* UIViewController+ModuleTransitionHandler.swift in Sources */,
+				89EECC4726155E2A009242BF /* LocationPickerContainerViewModel.swift in Sources */,
+				89EECC6C26158561009242BF /* Date+zodiac.swift in Sources */,
 				894066742613460400DC682F /* SegmentedControl.swift in Sources */,
 				8934C4E92613AA3000B19069 /* SettingsTableViewCell.swift in Sources */,
 				894064DD2612308800DC682F /* UIView+RoundedCorners.swift in Sources */,
@@ -1323,8 +1409,10 @@
 				8940652E2612327C00DC682F /* LoadingView.swift in Sources */,
 				8934C59B2613D8A300B19069 /* HoroscopeNetworkServiceProtocol.swift in Sources */,
 				8934C5282613C37D00B19069 /* GeneralViewController.swift in Sources */,
+				89EECC4A26155E2A009242BF /* LocationPickerContainerCoordinatorProtocol.swift in Sources */,
 				8940652D2612327C00DC682F /* LoadingCoordinatorProtocol.swift in Sources */,
 				8934C51E2613C37D00B19069 /* TodayViewController.swift in Sources */,
+				89EECBD72615529F009242BF /* UIViewController+alert.swift in Sources */,
 				89F00A9D2542E16200D482F6 /* UIConstants.swift in Sources */,
 				8934C4F52613B81400B19069 /* LongPressDurationGestureRecognizer.swift in Sources */,
 				894064EC2612308800DC682F /* DefaultCoordinator.swift in Sources */,
@@ -1476,13 +1564,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PTMH37ZRSY;
+				DEVELOPMENT_TEAM = LBLG7J3SF4;
 				INFOPLIST_FILE = MacroCosm/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.okad.macrocosm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.macrocosm;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = YES;
@@ -1498,13 +1586,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PTMH37ZRSY;
+				DEVELOPMENT_TEAM = LBLG7J3SF4;
 				INFOPLIST_FILE = MacroCosm/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.okad.macrocosm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.macrocosm;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = YES;
@@ -1530,13 +1618,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PTMH37ZRSY;
+				DEVELOPMENT_TEAM = LBLG7J3SF4;
 				INFOPLIST_FILE = MacroCosm/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.okad.macrocosm;
+				PRODUCT_BUNDLE_IDENTIFIER = com.atekutov.macrocosm;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_SWIFT3_OBJC_INFERENCE = YES;

@@ -18,6 +18,9 @@ final class GeneralCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        viewModel.horoscopeService = HoroscopeNetworkService.shared
+        viewModel.userInfoStorage = UserInfoStorageService.shared
 
         if let configuration = configuration {
             configuration(viewModel)

@@ -49,3 +49,13 @@
 "privacyPolicy" = "Privacy policy";
 "version" = "Version";
 
+// Mark: UserInfoEditor
+"saveButton" = "save";
+"birthDayQuestion" = "What’s your Birth Day?";
+"birthTimeQuestion" = "What’s your Birth Time?";
+"birthPlaceQuestion" = "What’s your Birth Place?";
+"date" = "Date";
+"time" = "Time";
+"city" = "City";
+"datePickerTitleDate" = "Select your Birth Day";
+"datePickerTitleTime" = "Select your Birth Time";

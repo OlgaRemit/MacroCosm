@@ -18,6 +18,8 @@ final class UserInfoEditorCoordinator: DefaultCoordinator {
         view.coordinator = coordinator
 
         coordinator.transition = view
+        
+        viewModel.userInfoStorage = UserInfoStorageService.shared
 
         if let configuration = configuration {
             configuration(viewModel)
@@ -30,4 +32,8 @@ final class UserInfoEditorCoordinator: DefaultCoordinator {
 // MARK: - Interface for view
 extension UserInfoEditorCoordinator: UserInfoEditorCoordinatorProtocol {
 
+    func showMainScreen() {
+        let vc = MainCoordinator.createModule()
+        transition.presentInNewRootNavigationStack(controller: vc, animated: true, completionHandler: nil)
+    }
 }

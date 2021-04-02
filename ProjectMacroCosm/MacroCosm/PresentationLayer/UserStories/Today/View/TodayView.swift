@@ -73,7 +73,6 @@ final class TodayView: UIView {
     private func setupContentViews() {
         scroll.addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = R.image.colorPicker()
         imageView.contentMode = .scaleAspectFit
         
         scroll.addSubview(infoLabel)

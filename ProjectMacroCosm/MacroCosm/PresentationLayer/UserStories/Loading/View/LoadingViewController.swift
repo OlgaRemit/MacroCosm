@@ -27,18 +27,20 @@ final class LoadingViewController: UIViewController {
     }
     
     private func configureSelf() {
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear],
-                                                            for: .normal)
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear],
-                                                            for: .highlighted)
-        UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.clear],
-                                                            for: .focused)
+        UIStyleManager.setUIBarButtonItemsClear()
         
         viewModel.startConfiguration()
         
         _view.hideLogo()
         DispatchQueue.main.asyncAfter(deadline: .now() + _view.hideLogoDuration * 0.6) { [ weak self ] in
-            self?.coordinator.showMainScreen()
+            guard let self = self
+            else { return }
+            if self.viewModel.userInfo.isFilled {
+                self.coordinator.showMainScreen()
+            } else {
+                self.coordinator.showUserInfoEditor()
+            }
+            
         }
     }
 }
